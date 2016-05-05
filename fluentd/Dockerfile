@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y --force-yes libssl0.9.8 curl
+RUN apt-get update && apt-get install -y --force-yes libssl1.0.0 curl
 
 RUN curl -L http://toolbelt.treasuredata.com/sh/install-ubuntu-trusty-td-agent2.sh | sh && mkdir -p /var/log/td-agent
 
